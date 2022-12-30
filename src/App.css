@@ -1,0 +1,219 @@
+*
+{
+  font-family: Josefin Sans;
+  box-sizing: border-box;
+}
+
+.App
+{
+  padding: 2rem 2rem 2rem 2rem;
+  width:100%;
+  margin-left: auto;
+  margin-top: 5rem;
+  margin-right: auto;
+  height: auto;
+}
+
+body
+{
+  margin: 0;
+  padding: 0;
+  background-image: url(./back3.jpg);
+  background-size: cover;
+}
+
+.Header
+{
+  text-align: center;
+  color: white;
+}
+
+.container
+{
+  height: 40rem;
+  margin: auto;
+  width:90%;
+  justify-content: center;
+  align-items: center;
+ 
+}
+
+.balance
+{
+  padding: 10px;
+  color: white;
+}
+
+
+.balanceheader
+{
+   line-height: 0.5rem;
+}
+
+#balance
+{
+  line-height: 0.5rem;
+}
+
+ul li
+{
+   list-style-type: none;
+}
+
+.main
+{
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+  font-size: larger;
+  line-height: 0.5rem;
+  color: white;
+}
+
+.main > div
+{
+  flex: 1;
+  text-align: center;
+}
+
+.main > div:first-of-type
+{
+  border-right: 1px solid white;
+}
+
+
+#money-plus,#money-minus
+{
+  font-size: x-large;
+}
+
+label {
+  display: inline-block;
+  color: white;
+  margin: 10px 0;
+}
+
+input[type='text'],
+input[type='number'] {
+  border: 1px solid #dedede;
+  border-radius: 2px;
+  display: block;
+  font-size: 16px;
+  padding: 10px;
+  width: 100%;
+}
+
+.btn {
+  cursor: pointer;
+  background-color: crimson;
+  color: #fff;
+  border: 0;
+  display: block;
+  font-size: 16px;
+  margin: 10px 0 30px;
+  padding: 10px;
+  width: 100%;
+}
+
+.btn:focus,
+.delete-btn:focus {
+  outline: 0;
+}
+
+.list {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 40px;
+}
+
+.list li {
+  background-color: #fff;
+  box-shadow: var(--box-shadow);
+  color: #333;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.list li.plus {
+  border-right: 5px solid #2ecc71;
+}
+
+.list li.minus {
+  border-right: 5px solid #c0392b;
+}
+
+.delete-btn {
+  cursor: pointer;
+  background-color: #e74c3c;
+  border: 0;
+  color: #fff;
+  font-size: 20px;
+  line-height: 20px;
+  padding: 2px 5px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(-100%, -50%);
+  transition: opacity 0.3s ease;
+}
+
+@media  (hover:hover) 
+{
+   
+  .list li:hover .delete-btn {
+  opacity: 1;
+}
+}
+
+@media (max-width: 320px) {
+  .container {
+    width: 300px;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+@media  (min-width: 500px)
+{
+   .Header
+   {
+     font-size: larger;
+   }
+
+}
+
+@media (min-width:800px) {
+
+  
+  .delete-btn
+  {
+    opacity: 0;
+  }
+
+  .container
+{
+  height: auto;
+}
+  
+}
+
+@media (max-width:320px) {
+
+  .btn
+  {
+     width: auto;
+  }
+
+  input[type='text'],
+input[type='number']
+{
+  width: auto;
+   align-items: center;
+}
+  
+}
+
+
